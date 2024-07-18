@@ -1,0 +1,123 @@
+.home {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* .heroSection {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+} */
+
+.heroSection {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.headerContainer {
+  text-align: center;
+  color: white;
+}
+
+.headerContainer h1 {
+  font-size: 60px;
+}
+
+.menuSection h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  border-bottom: 2px solid rgb(148, 146, 146);
+
+}
+
+.headerContainer p {
+  font-size: 40px;
+  font-weight: lighter;
+  margin-bottom: 30px;
+}
+
+.headerContainer button {
+  background-color: #121619;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 60px;
+  width: 200px;
+  font-size: 24px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.headerContainer button:hover {
+  background-color: #07090a;
+  transition: 0.3s ease-in;
+}
+
+.menuSection {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.menuSection h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  border-bottom: 2px solid #727272;
+}
+
+.menuList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Center vertically */
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.menuItem {
+  text-align: center;
+  margin: auto;
+  /* Center horizontally */
+}
+
+.allItemsButton {
+  background-color: #121619;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 40px;
+  width: 200px;
+  font-size: 16px;
+  margin-top: 20px;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+.allItemsButton:hover {
+  background-color: #07090a;
+  transition: 0.3s ease-in;
+}
+
+@media only screen and (max-width: 650px) {
+  /* Add responsive styles here if needed */
+}

@@ -1,0 +1,170 @@
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: #2d3338;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar .leftSide {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  justify-content: space-between;
+}
+
+.navbar .leftSide img {
+  width: 120px;
+}
+
+.navbar .rightSide {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+}
+
+.navbar .rightSide button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar .rightSide svg {
+  font-size: 40px;
+}
+
+.navbar #open {
+  padding-left: 0px;
+}
+
+.navbar #open img {
+  display: none;
+}
+
+.navbar #close img {
+  display: inherit;
+}
+
+.navbar #open .hiddenLinks {
+  display: inherit;
+  margin-left: 30px;
+}
+
+.navbar #close .hiddenLinks {
+  display: none;
+}
+
+.navbar #open a {
+  width: 70px;
+  margin: 5px;
+}
+
+
+/* Dropdown styling */
+.navbar .userSection {
+  position: relative;
+}
+
+.navbar .userSection .avatar {
+  color: white;
+}
+
+.navbar .userSection .dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #2d3338;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  display: none;
+  flex-direction: column;
+  min-width: 120px;
+  z-index: 9999;
+  /* Set a higher z-index to make sure the dropdown is above other components */
+}
+
+.navbar .userSection:hover .dropdown {
+  display: flex;
+  z-index: 9999;
+  /* Maintain the same z-index on hover */
+}
+
+.navbar .userSection .dropdown a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Updated styling for better responsiveness */
+@media only screen and (max-width: 600px) {
+
+  .navbar .rightSide a,
+  .navbar .userSection .dropdown a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar .rightSide,
+  .navbar .userSection .dropdown {
+    position: static;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .navbar .userSection .dropdown {
+    top: auto;
+  }
+
+  .navbar .userSection:hover .dropdown {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar .rightSide a {
+    width: 70px;
+  }
+
+  .navbar .leftSide {
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar .rightSide a {
+    display: none;
+  }
+
+  .navbar .rightSide {
+    justify-content: flex-end;
+    padding-right: 50px;
+  }
+
+  .navbar .rightSide button {
+    display: inherit;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar .rightSide button {
+    display: none;
+  }
+
+  .hiddenLinks {
+    display: none;
+  }
+}
